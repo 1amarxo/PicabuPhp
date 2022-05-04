@@ -1,0 +1,258 @@
+
+   h1 {
+    font-size: 48px;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+  }
+  .about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    .profile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .custom-file-upload{
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        border: 1px solid #ccc;
+      
+        
+        cursor: pointer;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+  
+        border-radius: 50%;
+  
+        background-color: #2d6a4f;
+        border: 1px;
+  
+  
+        input[type="file"] {
+            display: none;
+            
+        }
+        
+       
+      }
+      
+    }
+  }
+  .upload-btn{
+    
+    font-family: 'Rubik', sans-serif;
+    background-color: #235a41;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    padding: 5px 10px;
+
+    transition: 0.2s;
+    &:hover{
+      background-color: #1d4734;
+      opacity: 0.7;
+    }
+  }
+  h1{
+    
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+  }
+  .username{
+    font-size: 32px;
+    margin: 10px;
+    opacity: 0.4;
+    transition: 0.5s;
+    &:hover{
+      
+    opacity: 1;
+    }
+  }
+}
+.container{
+  
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    .sub-container{
+      
+    display: flex;
+    width: 50%;
+        .main-content{
+          
+          width: 70%;
+          display: flex;
+          
+          .post {
+              position: relative;
+              width: 90%;
+              
+              max-width: 1240px;
+              margin: 10px auto;
+              
+              display: flex;
+              flex-direction: column;
+
+
+              .item-1 {
+                  margin: 15px;
+                  @media (min-width: 60em) {
+                      
+                    h1 {
+                      font-size: 24px;
+                    }
+                  }
+                }
+              .card {
+                background-color: #303136;
+                  text-decoration: none;
+                  color: #444;
+                  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                  display: flex;
+                  flex-direction: column;
+                  
+                  
+                  word-wrap: break-word;
+                  font-family: 'Rubik', sans-serif;
+                  
+                  position: relative;
+                  top: 0;
+                  transition: all .2s ease-in;
+                    
+                  &:hover {
+                    top: -4px;
+                    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+                  }
+                  
+                  article {
+                    padding: 20px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .tags{
+                      display: flex;
+                      flex-direction: row;
+                      overflow: hidden;
+                     
+                    }
+                    .user_profile{
+                      display: flex;
+                      align-content: center;
+                      margin-bottom: 12px;
+                      img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                      }
+                      .name{
+                        margin: 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      }
+                    }
+                  }
+                  a{
+                        
+                    font-family: 'Rubik', sans-serif;
+                    font-size: 18px;
+                    text-decoration: none;
+                    color: white;
+                    opacity: 0.3;
+                    transition: 0.3s;
+                    &:hover{
+                      opacity: 1;
+                    }
+                  }
+                  h1 {
+                    font-size: 20px;
+                    margin: 0;
+                    color: rgb(194, 194, 194);
+                  }
+                  p {
+                    flex: 1;
+                    line-height: 1.4;
+                  }
+                  
+                  span {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #999;
+                    
+                    letter-spacing: .05em;
+                    margin: 2em 0 0 0;
+                    overflow: hidden;
+                  }
+                  
+                  .thumb {
+                    padding-bottom: 60%;
+                    background-size: cover;
+                    background-position: center center;
+                  }
+                }
+              
+              @media (min-width: 30em) {
+                grid-template-columns: 1fr 1fr;
+              }
+              
+              @media (min-width: 60em) {
+                grid-template-columns: repeat(4, 1fr);
+              }
+            }
+        }
+        .right-aside{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            overflow: hidden;
+
+            width: 30%;
+            
+            margin: 20px auto;
+
+
+            .add{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              line-height: 28px;
+              padding: 5px;
+              font-family: 'Rubik', sans-serif;
+              color: #ffffff;
+              text-decoration: none;
+              
+              width: 70px;
+              height: 25px;
+              border-radius: 7px;
+              border: 1px solid rgba(0, 0, 0, 0.2);
+              
+              opacity: 0.9;
+          
+              transition: 0.5s;
+              cursor: pointer;
+              background-color: #33634d;
+              &:hover{
+                  
+                  background-color: #168aad;
+                  
+              } 
+            }
+        }
+    }
+    
+}

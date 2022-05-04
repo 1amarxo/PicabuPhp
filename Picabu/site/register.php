@@ -1,5 +1,5 @@
 <?php
-    require_once "db.php";
+    require_once('db.php');
     
     if(isset($_POST['reg_user'])){
 
@@ -22,7 +22,7 @@
         
         if(empty($pass1)){array_push($errors,"Password is required");}
 
-        //if($pass1 != $pass2) {array_push($errors,"Passwords don't match");}
+        if($pass1 != $pass2) {array_push($errors,"Passwords don't match");}
 
 
         //check db for existing user 
@@ -40,12 +40,14 @@
 
         if(count($errors) == 0){
             $password= md5($pass1);
-            $query="INSERT INTO `user` (`username`,`email`,`password`) VALUES ('$username','$email','$password')";
+            $query="INSERT INTO `user` (`username`,`email`,`password`,`userimg`) VALUES ('$username','$email','$password','picabu.png')";
            
             mysqli_query($conn,$query);
+            
+            $_SESSION['userid'] = mysqli_insert_id($conn);
             $_SESSION['username'] = $username;
             $_SESSION['success'] = "You are now logger in";
-            header('location: index.php');
+            header("location: ../site");
             
         }
     }
@@ -58,6 +60,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/login-style/style.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="">
     <title>Registration</title>
 
 </head>
@@ -66,43 +69,36 @@
   
         <h1>Create an account</h1>
         <p>Create and start managing your candidate!</p>
-        <hr>
-        <form method="POST" name="reg" action="register.php">
+        
+        <form method="POST" name="reg" >
 
-            <?php include('errors.php')?>
             <div class="container">
               
             
-                <input formControlName="email"
+                <input
                     placeholder="Email"
                     type="email"
-                    id="email"
                     name="email"
                     class="input" required>
             
-                <input formControlName="userName"
+                <input
                     placeholder="User Name"
                     type="text"
-                    id="userName"
                     minlength="7"
                     maxlength="20"
                     name="username"
                     class="input" required>
                 <input 
-                     formControlName="password"
                      placeholder="Password"
                      type="password"
-                     id="password"
                      minlength="7"
                      maxlength="36"
                      name="pass1"
                      class="input" required>
 
                      <input 
-                     formControlName="confirm_password"
                      placeholder="Confirm Password"
                      type="password"
-                     id="confirm_password"
                      minlength="7"
                      maxlength="36"
                      name="pass2"
@@ -114,8 +110,9 @@
                    
                 <button name="reg_user" type="submit" class="registerbtn">Register</button>
               
+            <?php include('errors.php')?>
               <div class="container signin">
-                 <p>Already have a user? <a href="login.php">Log in</a>.</p>
+                 <p>Already have a user? <a href="?page=login">Log in</a>.</p>
               </div>
         </form>
         

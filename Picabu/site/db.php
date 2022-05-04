@@ -1,7 +1,6 @@
 <?php
 
 
-    session_start();
     $dbhost = "localhost";
     $dbuser = "root";
     $dbname = "picabu";
@@ -9,6 +8,7 @@
     $username="";
     $email="";
 
+    
     $errors= array();
 
     //connection
@@ -16,7 +16,7 @@
     
     if (!$conn){die('No connection with DB');}
 
-    //Register users
+
 
 
     

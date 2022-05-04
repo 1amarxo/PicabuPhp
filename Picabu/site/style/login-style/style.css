@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;500&display=swap");
-
 .singin-container {
   position: absolute;
   width: 500px;
@@ -15,7 +14,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #224957;
+  color: #ffffff;
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -46,9 +45,11 @@
 
 .singin-container .container .input {
   background-color: #224957;
+  outline: none;
   padding: 0 10px;
   margin: 10px 0;
   color: #ffffff;
+  border: 0;
   border-radius: 10px;
   height: 35px;
   width: 300px;

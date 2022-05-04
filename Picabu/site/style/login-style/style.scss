@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color:#224957 ;
+    color:#ffffff ;
     text-align: center;
     transform: translate(-50%, -50%);
     h1{
@@ -28,12 +28,13 @@
       .input{
         background-color: #224957;
         
-
+        outline: none;
         padding: 0 10px;
         margin: 10px 0;
 
         color:#ffffff;
 
+        border: 0;
         border-radius: 10px;
 
         height: 35px;

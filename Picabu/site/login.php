@@ -2,6 +2,7 @@
     require_once 'db.php';
     
     if(isset($_POST['login_user'])){
+        
         if (isset($_POST['username'])) { $username = $_POST['username']; }
         if (isset($_POST['password'])) { $password = $_POST['password']; }
       
@@ -14,18 +15,28 @@
             array_push($errors,"Enter password");
         }
         if(count($errors)==0){
+
             $password=md5($password);
 
             $query = "SELECT * FROM `user` WHERE `username`='$username' AND `password`='$password'";
+           
             $result = mysqli_query($conn,$query);
+            
+
             if(mysqli_num_rows($result)){
-                
+                while($row = mysqli_fetch_assoc($result)){
+                    
+                    
+                    $_SESSION['userid'] = $row["id"];
+                    
+                }
+
+                      
                 $_SESSION['username'] = $username;
-                
-                $_SESSION['success'] = "SUUSCRSS";
-                header("location: index.php");
+                header("location: ../site");
             }
             else{
+                
                 array_push($errors,"Wrong username or password");
             }
         }
@@ -40,7 +51,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/login-style/style.css">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Registration</title>
+    <title>Login</title>
 
 </head>
 <body>
@@ -48,8 +59,7 @@
   
         <h1>Log In</h1>
         
-        <hr>
-        <form method="POST" name="reg" action="login.php">
+        <form method="POST" name="reg" >
             <div class="container">
               
             
@@ -71,14 +81,11 @@
                      class="input" required>
 
                 </div>
-
-              
-        
                 
-                <button name="login_user" type="submit" class="registerbtn">Log In</button>
-              
+                <button name="login_user" type="submit" class="registerbtn">Log In</button>            
+                 <?php include('errors.php')?>
               <div class="container signin">
-                <p>Want to create a user? <a href="register.php">Sign up</a>.</p>
+                <p>Want to create a user? <a href="?page=register">Sign up</a>.</p>
               </div>
         </form>
         
