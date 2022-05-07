@@ -1,4 +1,4 @@
-
+@import url('https://css.gg/comment.css');
    h1 {
     font-size: 48px;
     font-family: 'Rubik', sans-serif;
@@ -94,6 +94,7 @@
           
           width: 70%;
           display: flex;
+          flex-direction: column;
           
           .post {
               position: relative;
@@ -107,7 +108,6 @@
 
 
               .item-1 {
-                  margin: 15px;
                   @media (min-width: 60em) {
                       
                     h1 {
@@ -123,7 +123,7 @@
                   display: flex;
                   flex-direction: column;
                   
-                  
+                  margin: 10px 0;
                   word-wrap: break-word;
                   font-family: 'Rubik', sans-serif;
                   
@@ -197,21 +197,104 @@
                     overflow: hidden;
                   }
                   
+                  .card-footer{
+                    display: flex;
+                    align-items: center;
+                    
+                    margin:10px 25px;
+
+                    .card-comments{
+                      display: flex;
+                      justify-content: center;
+                      .comment-icon{
+                        
+                        padding: 10px;
+                      }
+                    }
+                  }
                   .thumb {
                     padding-bottom: 60%;
                     background-size: cover;
                     background-position: center center;
                   }
-                }
+              }
               
               @media (min-width: 30em) {
                 grid-template-columns: 1fr 1fr;
+              } 
+              @media (min-width: 60em) {
+                grid-template-columns: 4fr 2fr;
               }
               
-              @media (min-width: 60em) {
-                grid-template-columns: repeat(4, 1fr);
+              
+          } 
+          .text-container{
+            position: relative;
+            width: 90%;
+            margin: 10px auto;
+            
+            display: flex;
+            color:  white;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            background-color:#212529 ;
+            border: 1.2px solid #6d6875;
+            transition: 0.4s;
+            &:focus-within{
+              border: 1.2px solid orange;
+        
+            }
+            .upload-btn{
+              background-color: #235a41;
+              border: 0;
+              outline: none;
+              color: #ffffff;
+              padding: 5px 10px;
+    
+              transition: 0.2s;
+              &:hover{
+                background-color: #1d4734;
+                opacity: 0.7;
               }
             }
+            textarea{
+              background-color:#212529 ;
+              width: 90%;
+              resize: none;
+              border: none;
+              outline: none;
+              color:  white;
+             
+              &:focus::placeholder {
+               
+                color: transparent;
+              
+              }
+            
+            }
+          }
+          .commentaries{
+            display: flex;
+            flex-direction: column;
+            .comment{
+              font-family: 'Rubik', sans-serif;
+              background-color: #303136;
+              margin: 6px 0;
+              padding: 5px 12px;
+              color: #ffffff;
+              span {
+                font-size: 18px;
+                font-weight: bold;
+                color: #999;
+                
+                letter-spacing: .05em;
+                margin: 2em 0 0 0;
+                overflow: hidden;
+              }
+            }
+          }
         }
         .right-aside{
             display: flex;

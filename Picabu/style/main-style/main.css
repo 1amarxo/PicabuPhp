@@ -1,3 +1,4 @@
+@import url("https://css.gg/comment.css");
 h1 {
   font-size: 48px;
   font-family: 'Rubik', sans-serif;
@@ -127,6 +128,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container .sub-container .main-content .post {
@@ -141,10 +146,6 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.container .sub-container .main-content .post .item-1 {
-  margin: 15px;
 }
 
 @media (min-width: 60em) {
@@ -166,6 +167,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 10px 0;
   word-wrap: break-word;
   font-family: 'Rubik', sans-serif;
   position: relative;
@@ -269,6 +271,29 @@ h1 {
   overflow: hidden;
 }
 
+.container .sub-container .main-content .post .card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 25px;
+}
+
+.container .sub-container .main-content .post .card .card-footer .card-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .sub-container .main-content .post .card .card-footer .card-comments .comment-icon {
+  padding: 10px;
+}
+
 .container .sub-container .main-content .post .card .thumb {
   padding-bottom: 60%;
   background-size: cover;
@@ -284,9 +309,104 @@ h1 {
 
 @media (min-width: 60em) {
   .container .sub-container .main-content .post {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: 4fr 2fr;
+        grid-template-columns: 4fr 2fr;
   }
+}
+
+.container .sub-container .main-content .text-container {
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #212529;
+  border: 1.2px solid #6d6875;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .sub-container .main-content .text-container:focus-within {
+  border: 1.2px solid orange;
+}
+
+.container .sub-container .main-content .text-container .upload-btn {
+  background-color: #235a41;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .sub-container .main-content .text-container .upload-btn:hover {
+  background-color: #1d4734;
+  opacity: 0.7;
+}
+
+.container .sub-container .main-content .text-container textarea {
+  background-color: #212529;
+  width: 90%;
+  resize: none;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.container .sub-container .main-content .text-container textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.container .sub-container .main-content .text-container textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.container .sub-container .main-content .text-container textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.container .sub-container .main-content .text-container textarea:focus::placeholder {
+  color: transparent;
+}
+
+.container .sub-container .main-content .commentaries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .sub-container .main-content .commentaries .comment {
+  font-family: 'Rubik', sans-serif;
+  background-color: #303136;
+  margin: 6px 0;
+  padding: 5px 12px;
+  color: #ffffff;
+}
+
+.container .sub-container .main-content .commentaries .comment span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+  overflow: hidden;
 }
 
 .container .sub-container .right-aside {
