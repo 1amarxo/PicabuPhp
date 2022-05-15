@@ -1,0 +1,240 @@
+
+html, body {
+    margin:0;
+    padding:0;
+    background-color: #1e2025;
+}
+.app{
+    width: 100%;
+    height: 100%;
+
+    
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+
+    header{
+    
+        display: flex;  
+        justify-content: center;
+        width: 99.8%;
+        left: 0;
+        z-index: 1000;
+        top: 0;
+        position: relative;
+        overflow: hidden;
+        
+        color: #FFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color:#30343f ;
+        min-height: 60px;
+        
+        @media (max-width: 1000px) {
+            
+        justify-content: space-between;
+        }
+        .main-header{
+
+            width: 60%;
+            display: flex;  
+            align-items: center;
+            
+            justify-content: space-between;
+            @media (max-width: 1000px) {
+            
+                width: 100%;
+                }
+            .menu{
+                width: 33%;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                color: #ffffff;
+                
+                font-family: 'Rubik', sans-serif;
+
+                li {
+                    height: 40px;
+                    line-height: 43px;
+                    margin: 0;
+                    padding: 0 22px;
+                    display: flex;
+                    font-size: 0.8em;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #FFF;
+
+                    @media (max-width: 1000px) {
+                        font-size: 12px;
+                        padding: 7px ;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #FFF;
+                        @media (max-width: 1000px) {
+                            font-size: 12px;
+                        }
+                    }
+                    &:hover{
+                        transition:ease-out 1s;
+                        background-color: #57cc99;
+                        
+                        box-shadow:0 10px 0 rgba(0, 0, 0, 0.15);
+                    }
+                    &:active{
+                        transition:ease-out 0s;
+                        
+                        background-color: #00afb9;
+                    }
+                }
+                @media (max-width: 1000px) {
+                    width: 50%;
+                }
+            }
+            .header_logo{
+                width: 33%;
+                height: 30px;
+                z-index: 100;
+                color:#ffffff;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 1px;
+                font-size: 1rem;
+                text-transform: uppercase;
+                .svg-icon {
+                    width: 2em;
+                    height: 2em;
+                }
+                
+                .svg-icon path,
+                .svg-icon polygon,
+                .svg-icon rect {
+                    fill: #4691f6;
+                }
+                
+                .svg-icon circle {
+                    stroke: #4691f6;
+                    stroke-width: 1;
+                }
+                                
+                @media (max-width: 1500px) {
+                    width: 1%;
+                }
+                @media (max-width: 1000px) {
+                    display: none;
+                }
+            }
+            .header_right-menu{
+                margin: 0;
+                padding: 0s;
+                width: 33%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                overflow: hidden;
+                p{
+
+                    font-family: 'Rubik', sans-serif;
+                    margin-right: 10px;
+                }
+                @media (max-width: 1000px) {
+                    justify-content: space-between;
+                } 
+                    
+                a{
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    text-align: center;
+                    line-height: 28px;
+                    font-family: 'Rubik', sans-serif;
+                    color: #ffffff;
+                    text-decoration: none;
+                    
+                    width: 70px;
+                    height: 25px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    
+                    opacity: 0.9;
+                
+                    transition: 0.5s;
+                    cursor: pointer;
+                   
+                }
+                .logout{
+                    
+                    
+                    background-color: #ef233c;
+                    &:hover{
+                        
+                        background-color: #fd455b;
+                        
+                    } 
+                }
+                
+                .login{
+                    
+                    
+                    background-color: #99d98c;
+                    &:hover{
+                        
+                        background-color: #168aad;
+                        
+                    } 
+                }
+                @media (max-width: 1500px) {
+                    .logout{
+                        text-align: center;
+                        width: 100px;
+                        height: 50px;
+                    }
+                } 
+                @media (max-width: 1000px) {
+                    p{
+                        width: 40px;
+                    }
+                    .logout{
+                        text-align: center;
+                        width: 100px;
+                        height: 50px;
+                    }
+                }
+                @media (max-width: 600px) {
+                    p{
+                        width: 40px;
+                    }
+                    .logout{
+                        text-align: center;
+                        width: 60px;
+                        font-size: 12px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media (max-width: 1500px) {
+    .header_right-menu{
+        overflow: hidden;
+    }
+}

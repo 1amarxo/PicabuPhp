@@ -1,0 +1,30 @@
+.commentaries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.commentaries .comment {
+  font-family: 'Rubik', sans-serif;
+  background-color: #303136;
+  margin: 6px 0;
+  padding: 5px 12px;
+  color: #ffffff;
+  word-wrap: break-word;
+}
+
+.commentaries .comment a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+  overflow: hidden;
+}
+/*# sourceMappingURL=comment.css.map */

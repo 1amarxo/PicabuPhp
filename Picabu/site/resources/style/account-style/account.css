@@ -1,0 +1,308 @@
+@import url("https://css.gg/options.css");
+.options-i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.options-i i {
+  color: #ffffff;
+}
+
+.about-settings {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.about-settings .settings {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-settings .settings .custom-file-upload-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px solid #ccc;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px;
+}
+
+.about-settings .settings .custom-file-upload-user input[type="file"] {
+  display: none;
+}
+
+.about-settings .settings h1 {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.about-settings .profile-input-settings {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+}
+
+.about-settings .profile-input-settings h1 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+}
+
+.about-settings .profile-input-settings p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+}
+
+.about-settings .profile-input-settings form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.about-settings .profile-input-settings form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .about-settings .profile-input-settings form .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about-settings .profile-input-settings form .container .container-settings-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-inputs .upload-btn {
+  font-family: 'Rubik', sans-serif;
+  background-color: #235a41;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-inputs .upload-btn:hover {
+  background-color: #1d4734;
+  opacity: 0.7;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-inputs .input-settings {
+  background-color: #224957;
+  outline: none;
+  padding: 0 10px;
+  margin: 10px 0;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  height: 35px;
+  width: 300px;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-inputs .input-settings::-webkit-input-placeholder {
+  color: #ffffff;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-inputs .input-settings:-ms-input-placeholder {
+  color: #ffffff;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-inputs .input-settings::-ms-input-placeholder {
+  color: #ffffff;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-inputs .input-settings::placeholder {
+  color: #ffffff;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-image {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-image .upload-btn {
+  font-family: 'Rubik', sans-serif;
+  background-color: #235a41;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-image .upload-btn:hover {
+  background-color: #1d4734;
+  opacity: 0.7;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-image .custom-file-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-image .custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.about-settings .profile-input-settings form .container .container-settings-image .custom-file-upload:hover {
+  opacity: 0.7;
+}
+
+.about-settings .profile-input-settings form .registerbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #20DF7F;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 0px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  height: 45px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.about-settings .profile-input-settings form .registerbtn:hover:enabled {
+  background: #2ec4b6;
+}
+
+.about-settings .profile-input-settings form .div-error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  color: red;
+}
+
+span {
+  text-align: left;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+}
+/*# sourceMappingURL=account.css.map */

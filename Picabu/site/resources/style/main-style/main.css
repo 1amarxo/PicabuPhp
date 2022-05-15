@@ -1,0 +1,478 @@
+@import url("https://css.gg/comment.css");
+h1 {
+  font-size: 48px;
+  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about form .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about form .profile .custom-file-upload-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ccc;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #2d6a4f;
+  border: 1px;
+}
+
+.about form .profile .custom-file-upload-user input[type="file"] {
+  display: none;
+}
+
+.about form .profile .custom-file-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #2d6a4f;
+  border: 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about form .profile .custom-file-upload:hover {
+  opacity: 0.7;
+}
+
+.about form .profile .custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.about .upload-btn {
+  font-family: 'Rubik', sans-serif;
+  background-color: #235a41;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.about .upload-btn:hover {
+  background-color: #1d4734;
+  opacity: 0.7;
+}
+
+.about h1 {
+  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+}
+
+.about .username {
+  font-size: 32px;
+  margin: 10px 20px;
+  opacity: 0.4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about .username:hover {
+  opacity: 1;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container .sub-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .container .sub-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.container .sub-container .main-content {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .sub-container .main-content .post {
+  position: relative;
+  width: 90%;
+  max-width: 1240px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .sub-container .main-content .post .card {
+  background-color: #303136;
+  text-decoration: none;
+  color: #444;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0;
+  word-wrap: break-word;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  top: 0;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.container .sub-container .main-content .post .card:hover {
+  top: -4px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container .sub-container .main-content .post .card article {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .sub-container .main-content .post .card article .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+}
+
+.container .sub-container .main-content .post .card article .user_profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 12px;
+}
+
+.container .sub-container .main-content .post .card article .user_profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.container .sub-container .main-content .post .card article .user_profile .name {
+  margin: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .sub-container .main-content .post .card a {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .sub-container .main-content .post .card a:hover {
+  opacity: 1;
+}
+
+.container .sub-container .main-content .post .card h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #c2c2c2;
+}
+
+.container .sub-container .main-content .post .card p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 1.4;
+}
+
+.container .sub-container .main-content .post .card span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+  overflow: hidden;
+}
+
+.container .sub-container .main-content .post .card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 25px;
+}
+
+.container .sub-container .main-content .post .card .card-footer .card-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .sub-container .main-content .post .card .card-footer .card-comments .comment-icon {
+  padding: 10px;
+}
+
+.container .sub-container .main-content .post .card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 30em) {
+  .container .sub-container .main-content .post {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 60em) {
+  .container .sub-container .main-content .post {
+    -ms-grid-columns: 4fr 2fr;
+        grid-template-columns: 4fr 2fr;
+  }
+}
+
+.container .sub-container .main-content .text-container {
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #212529;
+  border: 1.2px solid #6d6875;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .sub-container .main-content .text-container:focus-within {
+  border: 1.2px solid orange;
+}
+
+.container .sub-container .main-content .text-container .upload-btn {
+  background-color: #235a41;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  padding: 5px 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.container .sub-container .main-content .text-container .upload-btn:hover {
+  background-color: #1d4734;
+  opacity: 0.7;
+}
+
+.container .sub-container .main-content .text-container textarea {
+  background-color: #212529;
+  width: 90%;
+  resize: none;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.container .sub-container .main-content .text-container textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.container .sub-container .main-content .text-container textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.container .sub-container .main-content .text-container textarea:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.container .sub-container .main-content .text-container textarea:focus::placeholder {
+  color: transparent;
+}
+
+.container .sub-container .right-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  width: 30%;
+  margin: 20px auto;
+}
+
+@media (max-width: 1000px) {
+  .container .sub-container .right-aside {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.container .sub-container .right-aside .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  line-height: 28px;
+  padding: 5px;
+  font-family: 'Rubik', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  width: 70px;
+  height: 25px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #33634d;
+}
+
+.container .sub-container .right-aside .add:hover {
+  background-color: #168aad;
+}
+/*# sourceMappingURL=main.css.map */
